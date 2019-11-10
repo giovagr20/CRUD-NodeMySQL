@@ -15,6 +15,8 @@ app.set('views', path.join(__dirname, 'views'));
 //middleware
 app.use(morgan('dev'));
 app.use(require('./database'));
+app.use(express.urlencoded({extended: false}));
+
 
 //routes
 app.use('/', customerRoutes);

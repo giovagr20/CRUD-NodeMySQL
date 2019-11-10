@@ -1,0 +1,21 @@
+--Database
+
+CREATE DATABASE NodeMySQL;
+
+--Use
+Use NodeMySQL;
+
+--Table
+CREATE Table Customer(
+    Id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    FullName VARCHAR(50) NOT NULL,
+    MyAddress VARCHAR(100) NOT NULL,
+    Phone VARCHAR(15)
+);
+
+--SHOW TABLE
+SHOW TABLES;
+
+-- DESCRIBE TABLE
+
+DESCRIBE Customer;
